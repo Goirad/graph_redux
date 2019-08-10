@@ -312,7 +312,7 @@ pub trait GraphLike {
                                             && (self.get_edge(k, m) == col)
                                             && (self.get_edge(l, m) == col)
                                         {
-                                            for n in (m + 1)..self.num_verts() - 2 {
+                                            for n in (m + 1)..=self.num_verts() - 2 {
                                                 if (self.get_edge(i, n) == col)
                                                     && (self.get_edge(j, n) == col)
                                                     && (self.get_edge(k, n) == col)
